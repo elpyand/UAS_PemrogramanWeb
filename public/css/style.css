@@ -38,7 +38,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 400;
-    font-size: 12x;
+    font-size: 12px;
 }
 
 nav ul li a:hover {
@@ -53,7 +53,6 @@ nav ul li a:hover {
     padding: 0;
     display: flex;
     flex-direction: row;
-
 }
 
 .text-hero h1 {
@@ -151,13 +150,10 @@ nav ul li a:hover {
     text-align: justify;
 }
 
-
-
 .text-tentang{
     display: flex;
     flex-direction: row;
     margin: 84px 100px;
-
 }
 
 .text-tentang img{
@@ -197,7 +193,7 @@ nav ul li a:hover {
 #panicButton.hidden {
     opacity: 0;
     transform: scale(0);
-    pointer-events: none; /* biar nggak bisa diklik pas hilang */
+    pointer-events: none;
 }
 
 .pelaporan-timeline {
@@ -264,10 +260,9 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     margin: 200px 0;
-  }
-  
-  /* Container utama */
-  .pesan-terpadu {
+}
+
+.pesan-terpadu {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -275,9 +270,9 @@ nav ul li a:hover {
     border-radius: 20px;
     overflow: visible;
     margin-left: 84px;
-  }
-  
-  .pesan-terpadu2 {
+}
+
+.pesan-terpadu2 {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -285,91 +280,88 @@ nav ul li a:hover {
     border-radius: 20px;
     overflow: visible;
     margin-right: 84px;
-  }
-  /* Circle + Avatar */
-  .pesan-terpadu::before {
+}
+
+.pesan-terpadu::before {
     content: "";
     position: absolute;
-    left: -160px;              /* setengah lebar pseudo */
+    left: -160px;
     top: 50%;
     transform: translateY(-50%);
-    width: 320px;              /* lebar = tinggi lingkaran */
+    width: 320px;
     height: 320px;
-    background-color: #A7A3FF; /* warna latar circle */
+    background-color: #A7A3FF;
     background-image: url('/image/alifa.png');
     background-repeat: no-repeat;
-  background-position: center;    /* pastikan pusat gambar tepat di tengah circle */
-  background-size: contain;
-    border-radius: 50%;        /* bulat sempurna */
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
     box-sizing: border-box;
     z-index: 1;
-  }
+}
 
-  .pesan-terpadu2::after {
+.pesan-terpadu2::after {
     content: "";
     position: absolute;
-    right: -160px;           /* geser setengah lebar pseudo ke luar */
+    right: -160px;
     top: 50%;
     transform: translateY(-50%);
-    width: 320px;            /* diameter lingkaran */
+    width: 320px;
     height: 320px;
     background-color: #A7A3FF;
     background-image: url('/image/piki.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border-radius: 50%;      /* bulat sempurna */
+    border-radius: 50%;
     box-sizing: border-box;
     z-index: 1;
-  }
-  
-  /* Isi teks di dalam kotak */
-  .isi-pesan {
-    padding: 20px 20px 20px 200px; /* sisakan ruang untuk pseudo (320px/2 = 160px + spacing) */
-    z-index: 2;
-    color: #fff;
-  }
+}
 
-  .isi-pesan2 {
-    padding: 20px 200px 20px 20px; 
-    text-align: left; /* sisakan ruang untuk pseudo (320px/2 = 160px + spacing) */
+.isi-pesan {
+    padding: 20px 20px 20px 200px;
     z-index: 2;
     color: #fff;
-  }
-  
-  .isi-pesan h3 {
+}
+
+.isi-pesan2 {
+    padding: 20px 200px 20px 20px; 
+    text-align: left;
+    z-index: 2;
+    color: #fff;
+}
+
+.isi-pesan h3 {
     margin: 0 0 10px;
     font-size: 1.4rem;
-  }
-  
-  .isi-pesan p {
+}
+
+.isi-pesan p {
     margin: 0;
     line-height: 1.5;
     font-size: 1rem;
-  }
-  
-  .karakter {
+}
+
+.karakter {
     width: 100%;
     padding: 50px 0;
-  }
-  
-  .judul-karakter {
+}
+
+.judul-karakter {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
     color: #4D47C3;
-  }
-  
-  /* grid 3 kolom, otomatis wrap, dan baris kedua ter‑center */
-  .pilih-karakter {
+}
+
+.pilih-karakter {
     display: flex;          
     flex-wrap: wrap;        
-    justify-content: center; /* center setiap baris */
+    justify-content: center;
     gap: 30px;
-  }
-  
-  /* styling kartu */
-  .card-karakter {
+}
+
+.card-karakter {
     width: 150px;
     height: 150px;
     border-radius: 100px;
@@ -378,49 +370,48 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .card-karakter:hover {
+.card-karakter:hover {
     transform: translateY(-5px);
 }
-  
-  /* supaya gambar memenuhi kartu */
-  .card-karakter img {
+
+.card-karakter img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     padding: 200px;
     margin-top: 20px;
-  }
+}
 
-  .jumlah-laporan{
+.jumlah-laporan{
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 84px 0;
-  }
+}
 
-  .jumlah {
+.jumlah {
     width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }  
+}  
 
-  .jumlah h1{
+.jumlah h1{
     text-align: center;
     font-size: 2rem;
     margin: 0;
-  }
+}
 
-  .jumlah p{
+.jumlah p{
     text-align: center;
-  }
+}
 
-  footer{
+footer{
     width: 100%;
     background-color: #282828;
     height: 600px;
@@ -428,24 +419,24 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .emailsent{
+.emailsent{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
-  }
+}
 
-  footer input{
+footer input{
     background-color: #fff;
     width: 300px;
     height: 30px;
     border-radius: 50px;
     border: none;
-  }
+}
 
-  .input-wrapper {
+.input-wrapper {
     position: relative;
     width: 300px;
 }
@@ -455,7 +446,7 @@ nav ul li a:hover {
     height: 40px;
     border-radius: 50px;
     border: none;
-    padding-right: 40px; /* space for the circle icon */
+    padding-right: 40px;
     padding-left: 15px;
     box-sizing: border-box;
 }
@@ -465,7 +456,7 @@ nav ul li a:hover {
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #A7A3FF; /* biru Bootstrap */
+    background-color: #A7A3FF;
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -477,44 +468,43 @@ nav ul li a:hover {
 }
 
 .send-icon-circle:hover {
-    background-color: #4D47C3; /* lebih gelap saat hover */
+    background-color: #4D47C3;
 }
+
 
 .send-icon {
     color: white;
     font-size: 14px;
 }
 
-
-
-  footer h1{
+footer h1{
     font-size: 1rem;
     color: white;
-  }
+}
 
-  .link-navbar{
+.link-navbar{
     display: flex;
     flex-direction: row;
     gap: 20px;
     padding-top: 60px;
-  }
+}
 
-  .link-navbar a{
+.link-navbar a{
     text-decoration: none;
     color: white;
     font-size: 0.6rem;
-  }
+}
 
-  .sosmed-footer{
+.sosmed-footer{
     display: flex;
     flex-direction: row;
     gap: 20px;
     color: white;
     padding: 10px;
     font-size: 0.8rem;
-  }
+}
 
-  .callcenter-footer {
+.callcenter-footer {
     color: white;
     font-size: 0.65rem;
     text-align: center;
@@ -563,3 +553,350 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* MEDIA QUERIES UNTUK MOBILE - HANYA MENAMBAHKAN RESPONSIVITAS */
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+    /* Navigation */
+    .nav {
+        top: 5%;
+        width: 90%;
+        max-width: 500px;
+    }
+    
+    nav ul {
+        gap: 15px;
+        padding: 8px 15px;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li a {
+        font-size: 11px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        height: auto;
+        margin: 80px 20px 0 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .text-hero {
+        order: 2;
+        margin-top: 20px;
+    }
+    
+    .text-hero h1 {
+        font-size: 28px;
+        width: 100%;
+        line-height: 1.2;
+    }
+    
+    .text-hero p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    
+    .btn-hero {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .btn-1, .btn-2 {
+        padding: 12px 30px;
+        font-size: 14px;
+        width: 200px;
+        text-align: center;
+        margin: 0;
+    }
+    
+    /* Hero Images */
+    .img-hero {
+        order: 1;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .aura-hero {
+        height: 180px;
+        left: 20px;
+        top: 40px;
+    }
+    
+    .hilma-hero {
+        height: 220px;
+        left: 80px;
+        top: 20px;
+    }
+    
+    .daffa-hero {
+        height: 250px;
+        left: 140px;
+        top: 0px;
+    }
+    
+    /* Wave */
+    .wave-sec {
+        height: 50px;
+    }
+    
+    .wave {
+        height: 50px;
+        background-size: cover;
+    }
+    
+    /* About Section */
+    .tentang-kami {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: 30px;
+        margin-left: 30px;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .text-tentang {
+        flex-direction: column;
+        margin: 40px 20px;
+        gap: 20px;
+    }
+    
+    .text-tentang img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: contain;
+    }
+    
+    .tentang-kami p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    /* Timeline */
+    .pelaporan-timeline {
+        padding: 30px 15px;
+    }
+    
+    .judul-timeline {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .kontainer-timeline {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .langkah p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    
+    /* Motivasi Section */
+    .motivasi {
+        flex-direction: column;
+        margin: 80px 0;
+        gap: 40px;
+        padding: 0 20px;
+    }
+    
+    .pesan-terpadu, .pesan-terpadu2 {
+        margin: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .pesan-terpadu::before {
+        left: -50px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .pesan-terpadu2::after {
+        right: -50px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .isi-pesan {
+        padding: 15px 15px 15px 70px;
+    }
+    
+    .isi-pesan2 {
+        padding: 15px 70px 15px 15px;
+    }
+    
+    .isi-pesan h3, .isi-pesan2 h3 {
+        font-size: 16px;
+    }
+    
+    .isi-pesan p, .isi-pesan2 p {
+        font-size: 12px;
+    }
+    
+    /* Characters */
+    .karakter {
+        padding: 30px 20px;
+    }
+    
+    .judul-karakter {
+        font-size: 24px;
+    }
+    
+    .pilih-karakter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
+    
+    .card-karakter {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .card-karakter img {
+        padding: 20px;
+        margin-top: 0;
+    }
+    
+    /* Jumlah Laporan */
+    .jumlah-laporan {
+        flex-direction: column;
+        margin: 50px 0;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    
+    .jumlah {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .jumlah h1 {
+        font-size: 24px;
+    }
+    
+    .jumlah p {
+        font-size: 14px;
+    }
+    
+    /* Footer */
+    footer {
+        height: auto;
+        min-height: 400px;
+        padding: 40px 20px;
+    }
+    
+    .emailsent {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .input-wrapper {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    footer h1 {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .link-navbar {
+        gap: 15px;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .link-navbar a {
+        font-size: 11px;
+    }
+    
+    .sosmed-footer {
+        gap: 15px;
+        font-size: 14px;
+        justify-content: center;
+    }
+    
+    .callcenter-footer {
+        font-size: 11px;
+        margin-top: 20px;
+    }
+    
+    .callcenter-footer h4 {
+        font-size: 12px;
+    }
+    
+    .legal-footer {
+        font-size: 10px;
+        padding: 15px;
+    }
+    
+    /* Panic Button */
+    #panicButton {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-hero h1 {
+        font-size: 24px;
+    }
+    
+    .img-hero {
+        display: none;
+    }
+    
+    .aura-hero {
+        display: none;
+    }
+    
+    .hilma-hero {
+        display: none;
+
+    }
+    
+    .daffa-hero {
+          display: none;
+
+    }
+    
+    .pesan-terpadu::before {
+        left: -40px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .pesan-terpadu2::after {
+        right: -40px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .isi-pesan {
+        padding: 10px 10px 10px 50px;
+    }
+    
+    .isi-pesan2 {
+        padding: 10px 50px 10px 10px;
+    }
+}
