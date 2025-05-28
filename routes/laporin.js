@@ -6,21 +6,22 @@ const mysql = require('mysql2/promise');
 require('dotenv').config();
 
 // Koneksi Database
-const db = mysql.createConnection({
-  host: process.env.MYSQLHOST,
-  port: process.env.MYSQLPORT,
-  user: process.env.MYSQLUSER,
-  password: process.env.MYSQLPASSWORD,
-  database: process.env.MYSQLDATABASE
-});
-
-db.connect((err) => {
-  if (err) {
-    console.error('❌ Gagal koneksi DB:', err.message);
-  } else {
+let db;
+(async () => {
+  try {
+    db = await mysql.createConnection({
+      host: process.env.MYSQLHOST,
+      port: process.env.MYSQLPORT,
+      user: process.env.MYSQLUSER,
+      password: process.env.MYSQLPASSWORD,
+      database: process.env.MYSQLDATABASE
+    });
     console.log('✅ Terkoneksi ke Railway MySQL!');
+  } catch (err) {
+    console.error('❌ Gagal koneksi DB:', err.message);
   }
-});
+})();
+
 
 // Setup multer untuk upload file
 const storage = multer.diskStorage({
