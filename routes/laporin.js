@@ -3,14 +3,25 @@ const router = express.Router();
 const multer = require('multer');
 const path = require('path');
 const mysql = require('mysql2/promise');
+require('dotenv').config();
 
 // Koneksi Database
-const db = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'db_laporan'
-});
+let db;
+(async () => {
+  try {
+    db = await mysql.createConnection({
+      host: process.env.MYSQLHOST,
+      port: process.env.MYSQLPORT,
+      user: process.env.MYSQLUSER,
+      password: process.env.MYSQLPASSWORD,
+      database: process.env.MYSQLDATABASE
+    });
+    console.log('✅ Terkoneksi ke Railway MySQL!');
+  } catch (err) {
+    console.error('❌ Gagal koneksi DB:', err.message);
+  }
+})();
+
 
 // Setup multer untuk upload file
 const storage = multer.diskStorage({
