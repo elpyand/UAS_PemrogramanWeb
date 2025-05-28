@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Riwayat Laporan</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/jejakku.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <%- include('partials/header') %>
+
+  <div class="wrapper">
+    <div class="maincon-je">
+      <div class="header-je">
+        <h1>Riwayat Laporan Saya</h1>
+
+        <% if (laporan.length === 0) { %>
+          <p>Tidak ada laporan.</p>
+        <% } %>
+
+        <% if (id_jejakku) { %>
+          <button id="tambah-laporan-btn">Tambah Laporan Baru</button>
+        <% } %>
+      </div>
+        
+      <table class="table-laporan">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Tanggal</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% laporan.forEach((item, index) => { %>
+            <tr class="laporan-item"
+                data-id="<%= item.id_laporan %>" 
+                data-nama="<%= item.nama %>" 
+                data-alamat="<%= item.alamat %>" 
+                data-umur="<%= item.umur %>" 
+                data-deskripsi="<%= item.deskripsi %>" 
+                data-status="<%= item.status %>">
+              <td><%= index + 1 %></td>
+              <td><%= item.nama %></td>
+              <td><%= new Date(item.created_at).toLocaleDateString('id-ID') %></td>
+              <td><%= item.status %></td>
+              <td>
+                <a href="/jejak/<%= item.id_laporan %>" class="btn-lihat-jejak">Lihat Jejak</a>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Modal Tambah -->
+    <div id="modal-tambah" class="modal" style="display:none;">
+      <div class="modal-content">
+        <h2>Tambah Laporan Baru</h2>
+        <form id="tambah-form" method="POST" action="/laporin" enctype="multipart/form-data">
+          <input type="text" name="nama" placeholder="Nama" required><br>
+          <input type="text" name="alamat" placeholder="Alamat" required><br>
+          <input type="number" name="umur" placeholder="Umur" required><br>
+          <textarea name="deskripsi" placeholder="Deskripsi" required></textarea><br>
+          <input type="file" name="bukti" multiple><br>
+
+          <input type="hidden" name="id_jejakku" value="<%= id_jejakku %>">
+
+          <button type="submit">Kirim Laporan</button>
+          <button type="button" id="close-tambah-btn">Tutup</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panic Button -->
+  <button id="panicButton">
+    <i class="bi bi-exclamation-triangle-fill"></i>
+  </button>
+
+  <script>
+    const panicButton = document.getElementById('panicButton');
+
+    document.addEventListener('keydown', function(event) {
+        if (event.altKey && event.key.toLowerCase() === 'p') {
+            panicButton.classList.toggle('hidden');
+        }
+    });
+
+    panicButton.addEventListener('click', function() {
+        window.location.href = 'https://www.google.com';
+    });
+  </script>
+
+  <script src="/js/jejakku.js"></script>
+</body>
+</html>

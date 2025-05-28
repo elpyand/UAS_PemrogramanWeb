@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pikiww Chatbot</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>HADA</h2>
+    <div class="menu">
+      <a href="#">Beranda</a>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Cara Melapor</a>
+      <a href="#">Edukasi</a>
+      <a href="#">Komunitas</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <img src="avatar.jpg" alt="Avatar" />
+      <h3>Pikiww</h3>
+    </div>
+
+    <!-- Kotak chat hanya untuk pesan -->
+    <div class="chat-box" id="chat-box"></div>
+
+    <!-- Inputan user ada di bawah, di luar chat-box -->
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Tulis ceritamu di sini..." />
+      <button onclick="sendMessage()">
+        <img src="kirim-icon.png" alt="Kirim" />
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

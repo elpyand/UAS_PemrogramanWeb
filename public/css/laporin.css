@@ -1,0 +1,127 @@
+body{
+    background-color: #A7A3FF;
+    
+}
+
+.main-laporan{
+    border-radius: 30px;
+    height: 100%;
+    padding-bottom: 200px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-laporan h1{
+    font-size: 18px;
+    padding: 80px;
+}
+
+form{
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    
+}
+
+form input{
+    border: 1.5px solid #00000011;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 96.5%;
+    margin-top: 10px;
+}
+
+.banner{
+    width: 100%;
+    height: 250px;
+    background-color: #A7A3FF;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner h1{
+    color: white;
+}
+
+.banner button{
+    border: none;
+    background-color: #ffdd60;
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+
+.breadcrumb {
+    font-size: 12px;
+    margin: 30px;
+    color: white;
+}
+
+textarea{
+    border: 1.5px solid #00000011;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 96.5%;
+    margin-top: 10px;
+}
+
+form button{
+    border: none;
+    border-radius: 50px;
+    background-color: #A7A3FF;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .modal-content p{
+    font-size: 0.6rem;
+  }
+  .modal-content a{
+    background-color: #A7A3FF;
+    border-radius: 20px;
+    padding: 6px 13px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+  }

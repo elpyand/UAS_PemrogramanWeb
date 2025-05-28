@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADAPI</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <%- include('partials/header') %>
+
+    <section class="hero" id="hero">
+        <div class="content-hero">
+            <div class="hero-kiri">
+                <div class="text-hero">
+                <h1>SUARA KAMU BERHARGA</h1>
+                <p>Laporkan & Dapatkan Bantuan Sekarang</p>
+                </div>
+                <div class="btn-hero">
+                    <a class="btn-1" href="/#karakter">Chat HADAP</a>
+                    <a class="btn-2" href="/edukasi">Edukasi</a>
+                </div>
+            </div>
+        </div>
+        <div class="img-hero">
+            <img class="aura-hero" src="/image/aura.png" alt="">
+            <img class="hilma-hero" src="/image/hilma.png" alt="">
+            <img class="daffa-hero" src="/image/daffa.png" alt="">
+        </div>
+    </section>
+
+    <section id="tentangkami" class="tentang-kami">
+        <div class="text-tentang">
+            <div class="content-tentang">
+                <h1>Tentang Kami</h1>
+                <p>Kami adalah platform yang hadir untuk mendukung korban kekerasan seksual dengan menyediakan layanan pengaduan dan konsultasi yang aman, cepat, dan terpercaya. Dengan komitmen untuk melindungi hak dan keamanan setiap individu, kami menawarkan ruang yang nyaman bagi siapa saja yang membutuhkan bantuan, bimbingan, atau advokasi.</p>
+                <p> Melalui layanan kami, Anda dapat melaporkan kejadian, mendapatkan konsultasi dengan ahli, serta memperoleh informasi dan dukungan yang dibutuhkan untuk pemulihan. Kami percaya bahwa setiap suara berhak didengar dan setiap korban berhak mendapatkan keadilan.</p>
+            </div>
+            <div class="img-tentang">
+                <img src="/image/tandatanya.png" alt="">
+            </div>
+        </div>
+
+        <section class="pelaporan-timeline">
+            <h2 class="judul-timeline">Langkah-Langkah Pelaporan</h2>
+            <div class="kontainer-timeline">
+                <div class="langkah">
+                    <span class="nomor">1</span>
+                    <h3>Masuk Halaman Lapor</h3>
+                    <p>Dari halaman beranda, klik menu lapor untuk memulai proses.</p>
+                </div>
+                <div class="langkah">
+                    <span class="nomor">2</span>
+                    <h3>Isi Formulir</h3>
+                    <p>Lengkapi semua informasi yang diminta di form pelaporan.</p>
+                </div>
+                <div class="langkah">
+                    <span class="nomor">3</span>
+                    <h3>Pilih Kirim atau Draft</h3>
+                    <p>Anda bebas memilih untuk langsung kirim laporan atau menyimpannya sebagai draft.</p>
+                </div>
+                <div class="langkah">
+                    <span class="nomor">4</span>
+                    <h3>Dapatkan ID-Jejakku</h3>
+                    <p>Setelah submit, Anda akan mendapatkan ID unik untuk memantau laporan Anda.</p>
+                </div>
+                <div class="langkah">
+                    <span class="nomor">5</span>
+                    <h3>Pantau di Jejakku</h3>
+                    <p>Gunakan ID-Jejakku untuk memantau perkembangan laporan tanpa perlu login.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="motivasi">
+            <div class="pesan-terpadu">
+                <div class="isi-pesan">
+                <h3>Halo! Aku Alifa</h3>
+                <p>
+                    Aku tahu tidak mudah untuk berbicara tentang pengalaman yang menyakitkan.  
+                    Tapi ingat, kamu tidak sendiri. Banyak yang peduli dan siap mendengarkan.  
+                    Melapor bukan berarti lemah, justru itu tanda keberanian luar biasa.
+                </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="motivasi">
+            <div class="pesan-terpadu2">
+                <div class="isi-pesan2">
+                <h3>Halo! Aku Piki</h3>
+                <p>
+                    Pelecehan bukan salahmu. Tidak ada alasan untuk merasa malu atau takut. Dengan melapor, kamu membuka jalan untuk perubahan. Kamu hebat, dan kamu pantas mendapatkan keadilan serta rasa aman.
+                </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="karakter" class="karakter">
+            <h1 class="judul-karakter">Pilih Teman Chatmu!</h1>
+            <div class="pilih-karakter">
+                <a class="card-karakter" href="/chatbot?nama=Daffa&avatar=/image/daffa.png"><img src="/image/daffa.png" alt="Daffa"></a>
+                <a class="card-karakter" href="/chatbot?nama=Hilma&avatar=/image/hilma.png"><img src="/image/hilma.png" alt="Hilma"></a>
+                <a class="card-karakter" href="/chatbot?nama=Aura&avatar=/image/aura.png"><img src="/image/aura.png" alt="Aura"></a>
+                <a class="card-karakter" href="/chatbot?nama=Alifa&avatar=/image/alifa.png"><img src="/image/alifa.png" alt="Alifa"></a>
+                <a class="card-karakter" href="/chatbot?nama=Piki&avatar=/image/piki.png"><img src="/image/piki.png" alt="Piki"></a>                
+            </div>
+          </section>
+
+          <section class="jumlah-laporan">
+            <div class="jumlah">
+                <h1>20</h1>
+                <p>Laporan melalui website</p>
+            </div>
+            <div class="jumlah">
+                <h1>15</h1>
+                <p>Laporan melalui whatsapp</p>
+            </div>
+            <div class="jumlah">
+                <h1>30</h1>
+                <p>Laporan melalui email</p>
+            </div>
+          </section>
+
+          <%- include('partials/footer') %>
+    </section>
+    <button id="panicButton">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+    </button>
+
+    <script>
+        const panicButton = document.getElementById('panicButton');
+    
+        // Toggle visibility dengan Alt + P
+        document.addEventListener('keydown', function(event) {
+            if (event.altKey && event.key.toLowerCase() === 'p') {
+                panicButton.classList.toggle('hidden');
+            }
+        });
+    
+        // Redirect saat tombol diklik
+        panicButton.addEventListener('click', function() {
+            window.location.href = 'https://www.google.com'; // ganti ke situs aman
+        });
+    </script>
+    
+    
+    
+    
+</body>
+</html>

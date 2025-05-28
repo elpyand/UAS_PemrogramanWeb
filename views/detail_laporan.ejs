@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/detail.css">
+  <title>Document</title>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="/"><i class="bi bi-house-door-fill"></i> Beranda</a>
+  <span class="divider">›</span>
+  <a href="/jejakku?id_jejakku=<%= laporan.id_jejakku %>"><i class="bi bi-clock-history"></i> Riwayat Laporan</a>
+  <span class="divider">›</span>
+  <span>Detail Laporan</span>
+</nav>
+
+
+<div class="container-detail">
+  <div class="header-detail">
+    <h2>LAPOR-<%= laporan.id %></h2>
+    <p>Status terakhir: <span class="status"><%= laporan.status %></span></p>
+  </div>
+
+  <div class="detail-body">
+    <div class="timeline">
+      <% laporan.timeline.forEach((item, index) => { %>
+        <div class="timeline-item">
+          <div class="circle <%= item.aktif ? 'active' : '' %>"></div>
+          <div class="timeline-content">
+            <strong><%= item.tahap %></strong>
+            <p><%= item.waktu %></p>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+
+    <div class="catatan-petugas">
+      <h4>Catatan Petugas</h4>
+      <div class="catatan">
+        "<%= laporan.catatan %>"<br />
+        Petugas: <%= laporan.petugas %> - <%= laporan.tanggal_catatan %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsultasi HADAPI</title>
+    <link rel="stylesheet" href="/css/konsultasi.css">
+    <link rel="stylesheet" href="/css/body.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <div class="herosec-konsul">
+        <h1>Konsultasi Dengan Psikolog</h1>
+    </div>
+
+    <div class="mainsec-konsul">
+        <div class="desk">
+            <p>Kami  memahami bahwa menghadapi kasus pelecehan seksual dapat berdampak emosional. Kami  menyediakan rekomendasi psikolog profesional yang dapat Anda hubungi secara langsung untuk mendapatkan bantuan lebih lanjut. Kami tidak menyimpan informasi pribadi terkait sesi konseling Anda.</p>
+        </div>
+
+        <h1>Daftar Psikolog</h1>
+        <div class="card-psikolog">
+            <div class="card">
+                <img src="/image/doctor1.jpg" alt="">
+                <h2>Kirana</h2>
+                <h3>Spesialis Kekerasan Seksual</h3>
+                <p>Senin-Jumat, 10.00-17.00</p>
+                <button>Hubungi</button>
+            </div>
+            <div class="card">
+                <img src="/image/doctor2.jpg" alt="">
+                <h2>Cinta Dontol</h2>
+                <h3>Spesialis Kekerasan Seksual</h3>
+                <p>Senin-Jumat, 10.00-17.00</p>
+                <button>Hubungi</button>
+            </div>
+            <div class="card">
+                <img src="/image/doctor3.jpg" alt="">
+                <h2>Gningning</h2>
+                <h3>Spesialis Kekerasan Seksual</h3>
+                <p>Senin-Jumat, 10.00-17.00</p>
+                <button>Hubungi</button>
+            </div>
+            <div class="card">
+                <img src="/image/doctor4.jpg" alt="">
+                <h2>Christine</h2>
+                <h3>Spesialis Kekerasan Seksual</h3>
+                <p>Senin-Jumat, 10.00-17.00</p>
+                <button>Hubungi</button>
+            </div>
+            <div class="card">
+                <img src="/image/doctor5.jpg" alt="">
+                <h2>Harmonie </h2>
+                <h3>Spesialis Kekerasan Seksual</h3>
+                <p>Senin-Jumat, 10.00-17.00</p>
+                <button>Hubungi</button>
+            </div>
+            <div class="card">
+                <img src="/image/doctor6.jpg" alt="">
+                <h2>Nadine</h2>
+                <h3>Spesialis Kekerasan Seksual</h3>
+                <p>Senin-Jumat, 10.00-17.00</p>
+                <button>Hubungi</button>
+            </div>
+        </div>
+    </div>
+
+            <%- include('partials/footer') %>
+
+    <button id="panicButton">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+    </button>
+
+    <script>
+        const panicButton = document.getElementById('panicButton');
+    
+        // Toggle visibility dengan Alt + P
+        document.addEventListener('keydown', function(event) {
+            if (event.altKey && event.key.toLowerCase() === 'p') {
+                panicButton.classList.toggle('hidden');
+            }
+        });
+    
+        // Redirect saat tombol diklik
+        panicButton.addEventListener('click', function() {
+            window.location.href = 'https://www.google.com'; // ganti ke situs aman
+        });
+    </script>
+</body>
+</html>

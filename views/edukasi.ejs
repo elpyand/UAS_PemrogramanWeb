@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi - HADAPI</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/edukasi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <%- include('partials/header') %>
+
+    <div class="hero-section">
+        <h1>Kenali, Cegah, dan Lawan Pelecehan Seksual</h1>
+        <p>Tonton video edukatif kami untuk memahami bentuk, dampak, dan cara melawan pelecehan seksual. Bersama, kita bisa menciptakan lingkungan yang aman.</p>
+        <div class="btn-hero">
+            <a class="btn-1" href="/laporin">Laporin</a>
+            <a class="btn-2" href="/#karakter">Chat HADAP</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="video-grid">
+          <div class="video-card" onclick="openModal('https://www.youtube.com/embed/OxiwR2dRA-w')">
+            <iframe src="https://www.youtube.com/embed/OxiwR2dRA-w"
+                    frameborder="0" allowfullscreen></iframe>
+            <h4>Ini Cara Menolak Pelecehan Seksual di Tempat Umum</h4>
+            <p>Video edukatif dari SINDOnews yang menjelaskan langkah praktis menolak tindakan pelecehan di tempat umum.</p>
+          </div>
+      
+          <div class="video-card" onclick="openModal('https://www.youtube.com/embed/ftF24LJNFsI')">
+            <iframe src="https://www.youtube.com/embed/ftF24LJNFsI"
+                    frameborder="0" allowfullscreen></iframe>
+            <h4>Tips Melindungi Diri dari Pelecehan Seksual</h4>
+            <p>Dari channel RUPI — edukasi tentang perlindungan diri dari tindakan pelecehan seksual dan langkah preventifnya.</p>
+          </div>
+      
+          <div class="video-card" onclick="openModal('https://www.youtube.com/embed/WDkRgOF8vog')">
+            <iframe src="https://www.youtube.com/embed/WDkRgOF8vog"
+                    frameborder="0" allowfullscreen></iframe>
+            <h4>Pelecehan Seksual Bisa Terjadi di Mana Saja</h4>
+            <p>Video dari BEM UGM yang membahas kesadaran bahwa pelecehan bisa terjadi di lingkungan kampus maupun umum.</p>
+          </div>
+
+          <div class="video-card" onclick="openModal('https://www.youtube.com/embed/uLobL__llZU')">
+            <iframe src="https://www.youtube.com/embed/uLobL__llZU"
+                    frameborder="0" allowfullscreen></iframe>
+            <h4>Kenapa Kita Harus Peduli dengan Kesehatan Mental?</h4>
+            <p>Video ini membahas pentingnya kesadaran tentang kesehatan mental dan bagaimana kita bisa menjaga kesehatan mental diri sendiri dan orang lain.</p>
+        </div>
+        
+        <div class="video-card" onclick="openModal('https://www.youtube.com/embed/OQU48FWHlkM')">
+            <iframe src="https://www.youtube.com/embed/OQU48FWHlkM"
+                    frameborder="0" allowfullscreen></iframe>
+            <h4>Memahami Dampak Kekerasan Seksual</h4>
+            <p>Video ini memberikan pemahaman mendalam mengenai dampak yang ditimbulkan oleh kekerasan seksual terhadap korban, baik secara fisik maupun psikologis.</p>
+        </div>
+        
+        <div class="video-card" onclick="openModal('https://www.youtube.com/embed/ek1hg_ruHSw')">
+            <iframe src="https://www.youtube.com/embed/ek1hg_ruHSw"
+                    frameborder="0" allowfullscreen></iframe>
+            <h4>Pentingnya Edukasi tentang Seksualitas Sejak Dini</h4>
+            <p>Video ini mengupas tentang pentingnya memberikan edukasi seksual kepada anak-anak dan remaja untuk mencegah kekerasan seksual dan meningkatkan kesadaran tentang batasan tubuh.</p>
+        </div>
+        
+        </div>
+      </div>
+      
+      <!-- Modal -->
+      <div id="videoModal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <iframe id="modalIframe" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <%- include('partials/footer') %>
+
+      <script src="/js/edukasi.js"></script>
+    </body>
+</html>

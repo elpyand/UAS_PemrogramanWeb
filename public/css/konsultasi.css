@@ -1,0 +1,101 @@
+.herosec-konsul{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: 0 84px;
+}
+
+.herosec-konsul h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: white;
+    display: flex;
+    max-width: 600px;
+}
+
+.mainsec-konsul{
+    background-color: white;
+    width: 100%;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desk{
+    display: flex;
+    justify-content: center;
+}
+.desk p{
+    color: rgb(40, 40, 40);
+    font-size: 0.8rem;
+    max-width: 800px;
+    text-align: justify;
+    font-style: italic;
+    margin-top: 150px;
+}
+
+.mainsec-konsul h1{
+    margin: 0 84px;
+    font-size: 1.5rem;
+    padding: 60px 0;
+}
+.card-psikolog{
+    margin: 0 84px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 100%;
+    padding-bottom: 100px;
+}
+
+.card{
+    border: 0.5px solid #0000000a;
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.card img{
+    width: 230px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card h3{
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.557);
+
+}
+
+.card p{
+    font-size: 0.6rem;
+    font-weight: 200;
+    color:rgba(0, 0, 0, 0.557);
+}
+
+.card button{
+    border: none;
+    background-color: #A7A3FF;
+    border-radius: 50px;
+    padding: 5px 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
